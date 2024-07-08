@@ -25,7 +25,7 @@ namespace AlunosApi.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Aluno>> GeAlunosByNome(string nome)
+        public async Task<IEnumerable<Aluno>> GetAlunosByNome(string nome)
         {
             IEnumerable<Aluno> alunos;
             if(!string.IsNullOrWhiteSpace(nome))
